@@ -10,4 +10,3 @@ Components included:
 - git
 - gcloud
 - gzip
-- kubectl
