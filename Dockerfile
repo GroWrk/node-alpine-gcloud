@@ -23,5 +23,5 @@ RUN sed -i -- 's/\"disable_updater\": false/\"disable_updater\": true/g' /opt/go
 RUN mkdir ${HOME}/.ssh
 ENV PATH /opt/google-cloud-sdk/bin:$PATH
 
-WORKDIR /root
+WORKDIR ${HOME}
 CMD bash
