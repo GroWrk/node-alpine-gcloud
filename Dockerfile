@@ -1,7 +1,7 @@
 FROM gcr.io/google.com/cloudsdktool/cloud-sdk:alpine
 LABEL author="Daniel Galindo <daniel@growrk.com>"
 
-ENV NODE_VERSION 12.22.1
+ENV NODE_VERSION 14.18.1
 
 RUN addgroup -g 1001 node \
   && adduser -u 1001 -G node -s /bin/sh -D node \
@@ -73,7 +73,7 @@ RUN addgroup -g 1001 node \
   && node --version \
   && npm --version
 
-ENV YARN_VERSION 1.22.5
+ENV YARN_VERSION 1.22.17
 
 RUN apk add --no-cache --virtual .build-deps-yarn curl gnupg tar \
   && for key in \
